@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung total belanja</title>
+</head>
+<body>
+    <div>
+         <h2>Hitung total Harga</h2>
+    <label for="nama">Nama:</label>
+    <input type="text" id="harga" placeholder="contoh: Miqdad">
+    <br>
+     <label for="harga">Harga satuan (RP) :</label>
+    <input type="number" id="harga" placeholder="contoh:15.000">
+    <br>
+    <label for="barang">Masukan Barang :</label>
+    <input type="number" id="harga" placeholder="contoh: Minyak">
+    <br>
+    <label for="harga">Jumlah Barang :</label>
+    <input type="number" id="harga" placeholder="contoh: 3">
+   
+    <label for="harga">Status Pembeli :</label>
+    <select id="status">
+        <option value="biasa">Biasa</option>
+         <option value="member">Member</option>
+    </select>
+   
+    <button onclick="hitungBelanja()">Hitung</button>
+
+    <h2>Aturan diskon</h2>
+    <table>
+        <tr>
+            <th>Subtotal Belanja</th>
+            <th>Diskon</th>
+        </tr>
+        <tr>
+            <td>Kurang dari Ro50.000</td>
+            <td>0%</td>
+        </tr>
+        <tr>
+            <td>Rp50.000 sampai Rp99.000</td>
+            <td>5%</td>
+        </tr>
+        <tr>
+            <td>Rp100.000 ke atas</td>
+            <td>10%</td>
+        </tr>
+    </table>
+    <p>Member mendapatkan tambahan diskon 5%.</p>
+
+    <h2>Simulasi harga (tanpa diskon)</h2>
+    <p id="simulasi"></p>
+    </div>
+   
+
+    <script src="srcipt.js"></script>
+</body>
+</html>
